@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%2300c6ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpath d='M12 1L3 5v6c0 5.25 3.5 10 9 12 5.5-2 9-6.75 9-12V5l-9-4z'/%3E%3Ccircle cx='12' cy='11' r='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Navbar Seguridad</title>
+</head>
+<body>
+  <nav class="navbar" aria-label="Barra de navegación principal">
+    <div class="logo" aria-label="Logo de seguridad">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 1L3 5v6c0 5.25 3.5 10 9 12 5.5-2 9-6.75 9-12V5l-9-4z"/>
+        <circle cx="12" cy="11" r="3"/>
+      </svg>
+      <span>SecureHub</span>
+    </div>
+
+    <div class="nav-container">
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <div class="burger"></div>
+      </button>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#inicio">Inicio</a></li>
+        <li role="none"><a role="menuitem" href="#servicios">Servicios</a></li>
+        <li role="none"><a role="menuitem" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <button class="cta" aria-label="Acceder">Acceder</button>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Bienvenido a <span class="highlight">SecureHub</span></h1>
+        <p class="description">
+        Una herramienta avanzada para el <strong>control de visitantes</strong> que acceden a tus instalaciones.
+        Gestiona y registra entradas de manera eficiente, garantizando la <strong>seguridad</strong> y el control en todo momento.
+        </p>
+        <button class="cta-hero">Conocer más</button>
+    </div>
+    <div class="hero-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/2345/2345500.png" alt="Seguridad Digital" />
+    </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+<section id="servicios" class="section servicios">
+  <div class="container">
+    <div class="text-block">
+      <h2>¿Qué hace SecureHub?</h2>
+      <p>
+        SecureHub centraliza el <strong>control de visitantes</strong> en tus instalaciones. 
+        Registra entradas y salidas, valida identidades, genera reportes y alerta sobre accesos no autorizados. 
+        Todo en una interfaz ágil pensada para mejorar la <strong>seguridad</strong> física y digital.
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">📋</div>
+        <h3>Registro rápido</h3>
+        <p>Captura datos de visitantes en segundos y lleva un historial confiable.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>Verificación</h3>
+        <p>Comprueba identidades y permisos antes de permitir el acceso.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>Alertas</h3>
+        <p>Recibe notificaciones ante actividades sospechosas o accesos duplicados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACTO ========== -->
+<section id="contacto" class="section contacto">
+  <div class="container">
+    <div class="contacto-grid">
+      <div class="contact-text">
+        <h2>Contáctanos</h2>
+        <p>
+          Si tienes dudas o quieres activar SecureHub en tu sitio, déjanos tus datos y te contactamos. 
+          Nuestro sistema es seguro y tu información se maneja con confidencialidad.
+        </p>
+      </div>
+      <form class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" required placeholder="Tu nombre" />
+        </div>
+        <div class="field">
+          <label for="email">Correo</label>
+          <input type="email" id="email" required placeholder="correo@ejemplo.com" />
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4" required placeholder="¿En qué te podemos ayudar?"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar mensaje</button>
+        <div class="form-status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>
